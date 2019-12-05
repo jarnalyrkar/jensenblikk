@@ -1,0 +1,178 @@
+.topHeader {
+  padding: 1em;
+  background-color: $blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+
+  &__telephone {
+    color: white;
+  }
+}
+
+.headerLogo {
+  color: #fff;
+  margin-bottom: 0;
+
+  &__img {
+    margin-right: 1em;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &__title {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 0.75em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: -0.5em;
+  }
+  &--invisible {
+    visibility: hidden;
+  }
+}
+
+.hamburger {
+  display: block;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 9999;
+
+  &__line {
+    background-color: white;
+    width: 1.75em;
+    height: 3px;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.mainNav {
+  padding-left:0;
+  list-style: none;
+  background-color: $blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 0;
+  visibility: hidden;
+  width: 100vw;
+  transition: height 500ms ease;
+  padding: 2em;
+  &__item {
+    margin-bottom: 1em;
+  }
+  &__link {
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+.fpNav {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+}
+
+.headerFacebook {
+  display: none;
+}
+
+.subheader {
+  margin: 2em 0 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .topHeader {
+    padding: 0;
+    &__telephone:hover {
+      color: #fff;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mainNav {
+    position: static;
+    height: initial;
+    width: initial;
+    visibility: visible;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+
+    &__item {
+      margin-right: 1em;
+      margin-bottom: 0;
+      position: relative;
+    }
+    &__link {
+      &:hover {
+        color: white;
+      }
+      &--active::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -20px;
+        width: 0;
+        height: 0;
+        border-top: solid 20px $blue;
+        border-left: solid 20px transparent;
+        border-right: solid 20px transparent;
+      }
+    }
+  }
+
+  .fpNav {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-content: center;
+
+    &__link {
+      font-family: 'Futura PT';
+      color: $blue;
+      margin: 0 10px;
+      text-transform: uppercase;
+    }
+
+    &__item {}
+  }
+
+  .headerFacebook {
+    display: block;
+    align-self: center;
+    margin-left: 2em;
+  }
+
+  .subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em;
+  }
+
+  .headerLogo {
+    display: flex;
+    align-items: center;
+  }
+
+}

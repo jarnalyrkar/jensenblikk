@@ -1,0 +1,13 @@
+<header class="topHeader">
+
+    <figure class="headerLogo {{ (fn('is_front_page')) ? 'headerLogo--invisible' : '' }}">
+      <h2 class="headerLogo__title">Jensen</h2>
+      <h2 class="headerLogo__subtitle">Blikk</h2>
+    </figure>
+    <a class="topHeader__telephone" href="tel:+4790692212">(+47) 906 92 212</a>
+
+    {% include 'partials/nav.twig' %}
+
+</header>
+
+{% include 'partials/front-page-nav.twig' %}

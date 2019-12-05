@@ -2,21 +2,22 @@ class MobileMenu {
 
   constructor() {
     this.hamburger = document.getElementById('hamburger')
-    this.menu = document.querySelector('.c-main-header__nav-list')
-    this.links = document.querySelectorAll('.c-main-header__nav-list li')
-    this.html = document.querySelector('html');
-    this.events();
+    this.menu = document.querySelector('.mainNav')
+    this.links = document.querySelectorAll('.mainNav__item')
+    this.open = false;
+    this.events()
   }
 
   events() {
     this.hamburger.addEventListener('click', (ev) => {
-      this.menu.classList.toggle('open');
-      this.hamburger.classList.toggle('open');
-
-      if (this.html.style.overflow === 'hidden') {
-        this.html.style.overflow = 'auto';
+      if (this.open) {
+        this.open = false
+        this.menu.style.visibility = "hidden"
+        this.menu.style.height = "0";
       } else {
-        this.html.style.overflow = 'hidden';
+        this.open = true;
+        this.menu.style.visibility = "visible"
+        this.menu.style.height = "100vh";
       }
 
     });

@@ -1,8 +1,5 @@
 <?php
-$context = array();
-$context['title'] = Timber::get_the_title();
-$context['content'] = Timber::get_the_content();
+$context = Timber::context();
+$context['post'] = new Timber\Post();
 
-get_header();
-Timber::render('index.twig', $context);
-get_footer();
+Timber::render('pages/index.twig', $context);

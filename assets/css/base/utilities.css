@@ -1,0 +1,10 @@
+.u-hidden {
+  visibility: hidden;
+}
+
+@media (min-width: 992px) {
+
+  .u-lg-hidden {
+    visibility: hidden;
+  }
+}

@@ -14,8 +14,13 @@
 /* Baseline (common typographic elements */
 @import "base/baseline.css";
 
+/* Global/ Utility classes */
+@import "base/utilities.css";
+
 /* Responsive oembeds. Comment to reset embed behavior to fixed-width */
 @import "base/responsive-embed.css";
 
 /* BEM-blocks */
-@import "modules/main-navigation.css"
+@import "modules/header.css";
+@import "modules/footer.css";
+@import "modules/acf-hero.css";

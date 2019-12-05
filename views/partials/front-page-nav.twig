@@ -1,0 +1,24 @@
+{% if fn('is_front_page') %}
+<header class="subheader">
+
+  <figure class="headerLogo headerLogo--blue {{ (fn('is_front_page')) ? '' : 'headerLogo--invisible' }}">
+    <img class="headerLogo__img" src="https://via.placeholder.com/120">
+    <div>
+      <h2 class="headerLogo__title">Jensen</h2>
+      <h2 class="headerLogo__subtitle">Blikk</h2>
+    </div>
+  </figure>
+
+  <ul class="fpNav">
+    {% for item in nav.get_items %}
+    {% if item.title != "Hjem" %}
+    <li class="fpNav__item {{ item.classes|join(' ') }}">
+      <a class="fpNav__link" href="{{ item.link }}">{{ item.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+</header>
+{% endif %}
+
