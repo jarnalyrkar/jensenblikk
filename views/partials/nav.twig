@@ -5,12 +5,13 @@
     <span class="hamburger__line"></span>
   </figure>
 
-  <ul class="mainNav">
-    {% for item in nav.get_items %}
-      <li class="mainNav__item {{ item.classes|join(' ') }} {{ (fn('is_front_page') ? 'u-lg-hidden' : '') }}">
-        <a class="mainNav__link" href="{{ item.link }}">{{ item.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="mainNav {{ fn('is_front_page') ? 'u-lg-dNone' : '' }} ">
+      {% for item in nav.get_items %}
+        <li class="mainNav__item {{ item.classes|join(' ') }} {{ (fn('is_front_page') ? 'u-lg-hidden' : '') }}">
+          <a class="mainNav__link" href="{{ item.link }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
   <a href="https://www.facebook.com/jensenblikk"><img class="headerFacebook" src="https://via.placeholder.com/25" alt="facebook icon"></a>
 </nav>

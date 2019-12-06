@@ -1,0 +1,20 @@
+<section class="referanceList">
+
+  <h2 class="referanceList__header">Referanser</h2>
+
+  {% for row in flex_row.referance_list %}
+    {% set counter = ( counter | default(0) + 1) %}
+        <article class="referance {{ (counter is divisible by(2)) ? 'referance--flip' : '' }}">
+          <img class="referance__img" src="{{ row.referance.thumbnail.src }}">
+          <div class="referance__textContainer">
+            <div class="referance__innerContainer">
+              <h3 class="referance__header">{{ row.referance.title }}</h3>
+              <p class="referance__teaserTxt">{{ row.referance.preview.read_more('') }}</p>
+              <a class="btnTrans" href="{{ row.referance.link }}">Les mer</a>
+            </div>
+          </div>
+
+        </article>
+      {% endfor %}
+
+</section>

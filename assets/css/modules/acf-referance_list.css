@@ -1,0 +1,68 @@
+.referanceList {
+  padding: 2em;
+  &__header {
+    font-family: 'Futura PT';
+    font-size: 1.313em;
+    color: $blue;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.referance {
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0.5em;
+  }
+  &__header {
+    text-transform: uppercase;
+    font-family: 'Futura PT';
+    font-size: 1.5em;
+    color: $blue;
+    margin-bottom: 0.5em;
+  }
+  &__teaserTxt {
+    color: $blue;
+    font-family: "Merriweather";
+    font-size: 0.669em;
+    margin-bottom: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+.referanceList {
+  padding: 4em;
+  &__header {
+    margin-bottom: 4em;
+  }
+}
+
+.referance {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    &__img {
+      flex: 50%;
+      max-height: 400px;
+      object-position: center;
+    }
+    &__textContainer {
+      flex: 50%;
+      padding: 2em;
+    }
+    &__innerContainer {
+      max-width: 400px;
+    }
+    &--flip {
+      flex-direction: row-reverse;
+    }
+    &--flip .referance__textContainer {
+      display:flex;
+      justify-content: end;
+    }
+  }
+}

@@ -23,5 +23,27 @@ function add_to_context($data) {
   return $data;
 } add_filter( 'timber/context', 'add_to_context' );
 
+
+// Ettersom kunden kun skal ha referanser endrer vi navnet fra Post til Referanse
+function cp_change_post_object() {
+    $get_post_type = get_post_type_object('post');
+    $labels = $get_post_type->labels;
+        $labels->name = 'Referanser';
+        $labels->singular_name = 'Referanse';
+        $labels->add_new = 'Legg til Referanse';
+        $labels->add_new_item = 'Legg til ny Referanse';
+        $labels->edit_item = 'Endre Referanse';
+        $labels->new_item = 'Referanser';
+        $labels->view_item = 'Se Referanse';
+        $labels->search_items = 'Søk i Referanser';
+        $labels->not_found = 'Ingen Referanser funnet';
+        $labels->not_found_in_trash = 'Ingen Referanser funnet i søppelbøtta';
+        $labels->all_items = 'Alle Referanser';
+        $labels->menu_name = 'Referanser';
+        $labels->name_admin_bar = 'Referanser';
+} add_action( 'init', 'cp_change_post_object' );
+// Legge til mulighet for featured images på posts
+add_theme_support('post-thumbnails');
+
 /* Custom Gutenberg blocks */
 require_once trailingslashit(get_stylesheet_directory()) . 'inc/acf-blocks.php';

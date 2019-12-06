@@ -66,6 +66,7 @@
   height: 0;
   visibility: hidden;
   width: 100vw;
+  max-width: 100%; /* To avoid overflow-x */
   transition: height 500ms ease;
   padding: 2em;
   &__item {
@@ -173,6 +174,10 @@
   .headerLogo {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    &--row {
+      flex-direction: row;
+    }
   }
 
 }
