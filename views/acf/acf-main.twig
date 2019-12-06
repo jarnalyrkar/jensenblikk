@@ -1,5 +1,7 @@
   {% for flex_row in post.meta('main') %}
     {% if flex_row.acf_fc_layout == 'hero' %}
       {% include 'acf/acf-hero.twig' %}
+    {% elseif flex_row.acf_fc_layout == 'referance_list' %}
+      {% include 'acf/acf-referance_list.twig' %}
     {% endif %}
   {% endfor %}

@@ -45,10 +45,13 @@
 }
 
 .certificates {
-  width: 160px;
   justify-content: space-around;
   display: flex;
   padding-bottom: 2.5em;
+  &__img {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
 }
 
 @media (min-width: 992px) {

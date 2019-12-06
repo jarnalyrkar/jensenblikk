@@ -2,9 +2,19 @@
   visibility: hidden;
 }
 
+.u-dNone {
+  display: none;
+}
+
 @media (min-width: 992px) {
 
   .u-lg-hidden {
     visibility: hidden;
   }
+
+  .u-lg-dNone {
+    display: none !important;
+  }
+
+
 }
