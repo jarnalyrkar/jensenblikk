@@ -1,0 +1,20 @@
+.referancePage__container {
+  padding: 0 2em;
+}
+
+.referancePage__title {
+  text-align: center;
+  color: $blue;
+  font-family: 'Futura PT';
+  font-size: 1em;
+  margin-top: 3em;
+}
+
+
+
+@media (min-width: 992px) {
+  .referancePage__title {
+    font-size: 2em;
+  }
+}
+

@@ -1,6 +1,24 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-  <h1>{{ post.title }}</h1>
-  <main>{{ post.content }}</main>
+<div class="referancePage__container">
+
+  <h1 class="referancePage__title">Våre kunder er våre ambassadører. Lorem ipsum dolor sit amet consectuer:</h1>
+
+  {% for post in posts %}
+  {% set counter = ( counter | default(0) + 1) %}
+  <article class="referance {{ (counter is divisible by(2)) ? 'referance--flip' : '' }}">
+    <img class="referance__img" src="{{ post.thumbnail.src }}">
+    <div class="referance__textContainer">
+      <div class="referance__innerContainer">
+        <h3 class="referance__header">{{ post.title }}</h3>
+        <p class="referance__teaserTxt">{{ post.preview.read_more('') }}</p>
+        <a class="btnTrans" href="{{ post.link }}">Les mer</a>
+      </div>
+    </div>
+
+  </article>
+  {% endfor %}
+</div>
+
 {% endblock %}

@@ -1,15 +1,8 @@
 {% extends 'layouts/base.twig' %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1>This is a single-post</h1>
-      <h2 class="title">
-        {{ post.post_title }}
-      </h2>
-      <div class="content">
-        {{ post.content }}
-      </div>
-    </div>
-  </div>
-</div>
+{% block content %}
+  <section class="singlePost__container">
+    <h2 class="singlePost__title">Referanse: {{ post.post_title }}</h2>
+    <div class="content">{{ post.content }}</div>
+  </section>
+{% endblock %}
