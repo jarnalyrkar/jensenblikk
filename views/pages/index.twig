@@ -7,17 +7,23 @@
 
   {% for post in posts %}
   {% set counter = ( counter | default(0) + 1) %}
-  <article class="referance {{ (counter is divisible by(2)) ? 'referance--flip' : '' }}">
-    <img class="referance__img" src="{{ post.thumbnail.src }}">
-    <div class="referance__textContainer">
-      <div class="referance__innerContainer">
-        <h3 class="referance__header">{{ post.title }}</h3>
-        <p class="referance__teaserTxt">{{ post.preview.read_more('') }}</p>
-        <a class="btnTrans" href="{{ post.link }}">Les mer</a>
+    <article class="referance{{ (counter is divisible by(2)) ? ' referance--flip' : '' }}">
+      <div class="referance__imgContainer">
+        <span style="display: inline-block;background-color: #91b9d3;">
+          <img class="referance__img" src="{{ post.thumbnail.src }}">
+        </span>
       </div>
-    </div>
 
-  </article>
+      <div class="referance__textContainer">
+        <div class="referance__innerContainer">
+          <h3 class="referance__header">{{ post.title }}</h3>
+          <p class="referance__teaserTxt">{{ post.preview.read_more('') }}</p>
+          <a class="btnTrans" href="{{ post.link }}">Les mer</a>
+        </div>
+      </div>
+
+    </article>
+
   {% endfor %}
 </div>
 
