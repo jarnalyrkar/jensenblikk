@@ -5,9 +5,11 @@
   {% for row in flex_row.referance_list %}
     {% set counter = ( counter | default(0) + 1) %}
         <article class="referance{{ (counter is divisible by(2)) ? ' referance--flip' : '' }}">
-          <span class="referance__imgContainer" style="background-color: #91b9d3;">
-            <img class="referance__img" src="{{ row.referance.thumbnail.src }}">
-          </span>
+          <div class="referance__imgContainer">
+            <span style="display: inline-block;background-color: #91b9d3;">
+              <img class="referance__img" src="{{ row.referance.thumbnail.src }}">
+            </span>
+          </div>
 
           <div class="referance__textContainer">
             <div class="referance__innerContainer">
