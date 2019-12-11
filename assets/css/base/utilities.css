@@ -16,5 +16,8 @@
     display: none !important;
   }
 
+}
 
+.u-blueTint {
+  background-color: rgba(0, 175, 255);
 }

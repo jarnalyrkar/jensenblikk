@@ -14,9 +14,12 @@
   margin-top: 2.5em;
   margin-bottom: 2.5em;
   &__img {
-    width: 100%;
+    opacity: 0.5;
+    max-width: 100%;
     object-fit: contain;
-    margin-bottom: 0.5em;
+  }
+  &__imgContainer {
+    text-align: center;
   }
   &__header {
     text-transform: uppercase;
@@ -45,8 +48,10 @@
     display: flex;
     align-items: center;
     text-align: left;
-    &__img {
+    &__imgContainer {
       flex: 50%;
+    }
+    &__img {
       max-height: 400px;
       object-position: center;
     }

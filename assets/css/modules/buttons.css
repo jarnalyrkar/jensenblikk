@@ -1,0 +1,14 @@
+.btnTrans {
+  color: $blue;
+  border: 1px solid $blue;
+  text-transform: uppercase;
+  font-family: 'Futura PT Bold';
+  font-size: 0.669em;
+  padding: 1em 2em;
+  margin-right: 0.5em;
+
+  &--white {
+    color: #fff;
+    border-color: #fff;
+  }
+}
