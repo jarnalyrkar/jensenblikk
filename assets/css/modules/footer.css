@@ -45,6 +45,7 @@
 }
 
 .certificates {
+  margin-right: 2em;
   justify-content: space-around;
   display: flex;
   padding-bottom: 2.5em;

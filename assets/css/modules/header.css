@@ -14,6 +14,7 @@
 .headerLogo {
   color: #fff;
   margin-bottom: 0;
+  margin-left: 2em;
 
   &__img {
     margin-right: 0.5em;
@@ -147,7 +148,7 @@
   .fpNav {
     display: flex;
     list-style: none;
-    justify-content: end;
+    justify-content: flex-end;
     align-content: center;
 
     &__link {
@@ -164,6 +165,7 @@
     display: block;
     align-self: center;
     margin-left: 2em;
+    margin-right: 2em;
   }
 
   .subheader {
