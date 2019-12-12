@@ -11,7 +11,9 @@
           <a class="mainNav__link" href="{{ item.link }}">{{ item.title }}</a>
         </li>
       {% endfor %}
+      <section class="mobileMenuFooter">{% include 'partials/footer.twig' %}</section>
     </ul>
 
-  <a href="https://www.facebook.com/jensenblikk"><img class="headerFacebook" src="https://via.placeholder.com/25" alt="facebook icon"></a>
+
+  <a href="https://www.facebook.com/jensenblikk"><img class="headerFacebook" src="{{ facebook_icon }}" alt="facebook icon"></a>
 </nav>

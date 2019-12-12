@@ -1,6 +1,9 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-<h1>Ta kontakt</h1>
-
+<section class="center contactPage">
+  <img class="contactPage__logo" src="{{ logo_vertical }}">
+  <h1 class="contactPage__header">Kontakt oss</h1>
+  {{ post.content }}
+</section>
 {% endblock %}
