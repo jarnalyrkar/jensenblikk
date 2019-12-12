@@ -1,0 +1,76 @@
+.contactPage {
+  background-color: $blue;
+  color: #fff;
+  &__logo {
+    display: none;
+  }
+  &__header {
+    padding: 2em 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Futura PT';
+    font-size: 1em;
+  }
+}
+
+.wpcf7-form-control {
+  width: calc(100% - 2em);
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.wpcf7-submit {
+  background-color: transparent;
+  border: 1px solid white;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Futura PT Bold";
+  font-size: 10.7px;
+  padding: 1em 5em;
+  width: auto;
+}
+
+.submit {
+  text-align: center;
+}
+
+::placeholder {
+  font-family: "Futura PT";
+  font-size: 1.313em;
+  text-transform: uppercase;
+  color: #40569B;
+}
+
+@media (min-width: 992px) {
+  .contactPage {
+    background-color: initial;
+    text-align: center;
+    width: 700px;
+    margin: 4em auto;
+    &__logo {
+      display: block;
+      max-width: 225px;
+      margin: auto;
+    }
+    &__header {
+      color: $blue;
+      text-transform: initial;
+      font-size: 2em;
+    }
+  }
+
+  .wpcf7-submit {
+    background-color: $blue;
+    border: 1px solid $blue;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Futura PT Bold";
+    font-size: 10.7px;
+    padding: 1em 5em;
+    width: auto;
+  }
+
+
+}

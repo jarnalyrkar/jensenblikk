@@ -20,6 +20,25 @@ function create_main_menu() {
 
 function add_to_context($data) {
   $data['nav'] = new Timber\Menu('headerMenuLocation');
+
+  /* Icons and logos used in header and footer */
+  $data['facebook_icon'] = get_stylesheet_directory_uri() . "/assets/img/facebookikon.svg";
+  $data['logo_small'] = get_stylesheet_directory_uri() . "/assets/img/logoliten.svg";
+  $data['logo_big_horizontal'] = get_template_directory_uri() . "/assets/img/logostorhorisontal.svg";
+  $data['logo_big_negative'] = get_stylesheet_directory_uri() . "/assets/img/logostornegativ.svg";
+  $data['logo_big_vertical'] = get_stylesheet_directory_uri() . "/assets/img/logostorvertikal.svg";
+  $data['map_icon'] = get_stylesheet_directory_uri() . "/assets/img/lokasjonikon.svg";
+  $data['mail_icon'] = get_stylesheet_directory_uri() . "/assets/img/mailikon.svg";
+  $data['phone_icon'] = get_stylesheet_directory_uri() . "/assets/img/telefonikon.svg";
+  $data['mestermerke_icon'] = get_stylesheet_directory_uri() . "/assets/img/mestermerke.svg";
+  $data['sentraltgodkjent_icon'] = get_stylesheet_directory_uri() . "/assets/img/sentraltgodkjent.svg";
+  $data['startbank_icon'] = get_stylesheet_directory_uri() . "/assets/img/startbank.svg";
+  $data['tool_icon_1'] = get_stylesheet_directory_uri() . "/assets/img/verktoy1.svg";
+  $data['tool_icon_2'] = get_stylesheet_directory_uri() . "/assets/img/verktoy2.svg";
+  $data['tool_icon_3'] = get_stylesheet_directory_uri() . "/assets/img/verktoy3.svg";
+  $data['tool_icon_4'] = get_stylesheet_directory_uri() . "/assets/img/verktoy4.svg";
+  /* * */
+
   return $data;
 } add_filter( 'timber/context', 'add_to_context' );
 

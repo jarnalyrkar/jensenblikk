@@ -1,2 +1,0 @@
-<?php
-$context = Timber::context();
