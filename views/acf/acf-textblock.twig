@@ -1,0 +1,10 @@
+
+  {% if flex_row.bg_color == 'white' %}
+    <div class="aboutBlock">
+  {% elseif flex_row.bg_color == 'blue' %}
+    <div class="aboutBlock aboutBlock--blue">
+  {% elseif flex_row.bg_color == 'img' %}
+    <div class="aboutBlock" style="background-image: url('{{ flex_row.bg_img }}')">
+      {% endif %}
+      {{ flex_row.wysiwyg }}
+  </div>

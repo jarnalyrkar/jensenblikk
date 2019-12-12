@@ -1,0 +1,33 @@
+.aboutBlock {
+  padding: 3em 0;
+  text-align: center;
+  background-color: white;
+  color: $blue;
+  font-family: "Futura PT";
+  font-size: 2em;
+  &--blue {
+    background-color: $blue;
+    color: white;
+  }
+  & img {
+    padding-bottom: 1em;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .aboutBlock {
+      padding: 2em 5em;
+  }
+}
+
+.aboutImage {
+  &__img {
+    &--fullwidth {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      padding-bottom: 0;
+    }
+  }
+}

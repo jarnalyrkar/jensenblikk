@@ -1,0 +1,7 @@
+  {% for flex_row in post.meta('innhold') %}
+    {% if flex_row.acf_fc_layout == 'textblock' %}
+      {% include 'acf/acf-textblock.twig' %}
+    {% elseif flex_row.acf_fc_layout == 'full_img' %}
+      {% include 'acf/acf-image.twig' %}
+    {% endif %}
+  {% endfor %}
