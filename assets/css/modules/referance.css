@@ -1,22 +1,55 @@
-.singlePost__container {
-  margin-top: 6em;
-  margin-bottom: 4em;
-  padding: 0 2em;
+.singlePost {
+  &__container {
+    padding: 0 2em;
+    max-width: 1300px;
+    margin: 6em auto 4em;
+  }
+  &__title {
+    margin-bottom: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blue;
+    font-family: "Futura PT";
+    font-size: 1.250em;
+  }
+  &__content {
+    margin-bottom: 3em;
+    text-align: center;
+    color: $blue;
+    & h2 {
+      font-size: 2em;
+      font-family: "Futura PT";
+      margin-bottom: 1em;
+    }
+    & p {
+      margin-bottom: 2em;
+    }
+  }
+
+  &__btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    flex-direction: column;
+  }
+  &__btns {
+    margin: 0 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    margin-bottom: 1em;
+  }
+
 }
 
-.singlePost__title {
-  margin-bottom: 4em;
-  text-align: center;
-  text-transform: uppercase;
-  color: $blue;
-  font-family: "Futura PT";
-  font-size: 1.250em;
-}
-
-.singlePost__container p {
-  margin-bottom: 3em;
-  color: $blue;
-  font-family: "Futura PT";
-  font-size: 2em;
-  text-align: center;
+@media (min-width: 992px) {
+  .singlePost {
+    &__btnContainer {
+      flex-direction: row;
+    }
+    &__btns {
+      flex-direction: row;
+    }
+  }
 }

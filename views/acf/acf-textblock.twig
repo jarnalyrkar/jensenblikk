@@ -6,5 +6,7 @@
   {% elseif flex_row.bg_color == 'img' %}
     <div class="aboutBlock" style="background-image: url('{{ flex_row.bg_img }}')">
       {% endif %}
-      {{ flex_row.wysiwyg }}
+      <div class="aboutBlock__inner">
+        {{ flex_row.wysiwyg }}
+      </div>
   </div>

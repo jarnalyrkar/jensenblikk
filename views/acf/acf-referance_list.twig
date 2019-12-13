@@ -6,7 +6,7 @@
     {% set counter = ( counter | default(0) + 1) %}
         <article class="referance{{ (counter is divisible by(2)) ? ' referance--flip' : '' }}">
           <div class="referance__imgContainer">
-            <span style="display: inline-block;background-color: #91b9d3;">
+            <span style="display: inline-block;background-color: #369;">
               <a href="{{ row.referance.link }}"><img class="referance__img" src="{{ row.referance.thumbnail.src }}"></a>
             </span>
           </div>

@@ -17,7 +17,11 @@
 
 @media (min-width: 992px) {
   .aboutBlock {
-      padding: 2em 5em;
+    padding: 2em 5em;
+    &__inner {
+      max-width: 992px;
+      margin: auto;
+    }
   }
 }
 

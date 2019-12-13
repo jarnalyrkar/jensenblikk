@@ -1,8 +1,8 @@
 <footer class="mainFooter">
 
   <figure class="footerLogo">
-    <img class="footerLogo__img footerLogo__img--desktop" src="{{ logo_small }}">
-    <img class="footerLogo__img footerLogo__img--mobile" src="{{ logo_big_vertical }}">
+    <img class="footerLogo__img footerLogo__img--desktop" width="170" src="{{ logo_small }}">
+    <img class="footerLogo__img footerLogo__img--mobile" width="125" src="{{ logo_big_vertical }}">
   </figure>
 
   <section class="contactInfo">
@@ -35,7 +35,12 @@
 </footer>
 
 
-
+<script>
+  var gallery = document.getElementsByClassName('mgl-justified')[0];
+  if (gallery) {
+    gallery.style = "--rh: 535px;";
+  }
+</script>
 {{ function('wp_footer') }}
 </body>
 </html>

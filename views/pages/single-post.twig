@@ -3,9 +3,12 @@
 {% block content %}
   <section class="singlePost__container">
     <h2 class="singlePost__title">Referanse: {{ post.post_title }}</h2>
-    <div class="content">{{ post.content }}</div>
+    <div class="singlePost__content">{{ post.content }}</div>
   </section>
-  <section class="singlePost__next">
-    <a href="#" class="btnTrans">Neste: </a>
+  <section class="singlePost__btnContainer">
+    <div class="singlePost__btns">
+      {% if post.prev.link %}<a href="{{ post.prev.link }}" class="btnTrans singlePost__btn">Forrige: {{ post.prev.title }}</a> {% endif %}
+      {% if post.next.link %}<a href="{{ post.next.link }}" class="btnTrans singlePost__btn">Neste: {{ post.next.title }}</a>{% endif %}
+    </div>
   </section>
 {% endblock %}

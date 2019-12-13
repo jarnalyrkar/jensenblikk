@@ -1,7 +1,7 @@
 <header class="topHeader">
 
-    <figure class="headerLogo {{ (fn('is_front_page')) ? 'headerLogo--invisible' : '' }}">
-      <img class="headerLogo__img--small" src="{{ logo_small }}">
+    <figure class="headerLogo {{ (fn('is_front_page')) ? 'headerLogo--invisible' : 'headerLogo--noMargin' }}">
+      <a href="{{ site.link }}"><img class="headerLogo__img--small" src="{{ logo_small }}"></a>
     </figure>
     <a class="topHeader__telephone" href="tel:+4790692212">(+47) 906 92 212</a>
 

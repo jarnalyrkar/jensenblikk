@@ -51,6 +51,9 @@
   &--invisible {
     display: none;
   }
+  &--noMargin {
+    margin-left: 0;
+  }
 }
 
 .hamburger {
@@ -176,7 +179,7 @@
     &__link {
       font-family: 'Futura PT';
       color: $blue;
-      margin: 0 10px;
+      margin: 0 15px;
       text-transform: uppercase;
     }
 
@@ -220,7 +223,6 @@
       display: block;
       visibility: hidden;
     }
-
   }
 
 }
