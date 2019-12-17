@@ -2,13 +2,18 @@
   color: $blue;
   border: 1px solid $blue;
   text-transform: uppercase;
-  font-family: 'Futura PT Bold';
-  font-size: 0.669em;
+  font-family: 'Futura PT';
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 12px;
   padding: 1em 3em;
   margin-right: 0.5em;
 
   &--white {
     color: #fff;
     border-color: #fff;
+    &:hover {
+      color: white;
+    }
   }
 }

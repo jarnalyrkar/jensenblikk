@@ -1,0 +1,8 @@
+<section class="certificatesModule">
+  {% for sertifisering in flex_row.sertifisering %}
+  <article class="certificate">
+    <img src="{{ sertifisering.bilde }}">
+    <p>{{ sertifisering.tekst }}</p>
+  </article>
+  {% endfor %}
+</section>

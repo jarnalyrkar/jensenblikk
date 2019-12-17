@@ -14,29 +14,34 @@
   margin-top: 2.5em;
   margin-bottom: 2.5em;
   &__img {
-    opacity: 0.5;
+    opacity: 0.6;
     max-width: 100%;
     object-fit: contain;
     transition: opacity 300ms ease;
+    filter: grayscale(100%) contrast(0.7) brightness(1.4);
+
     &:hover {
       transition: opacity 300ms ease;
       opacity: 1;
+      filter: none;
     }
   }
   &__imgContainer {
     text-align: center;
   }
   &__header {
+    margin-top: 1em;
     text-transform: uppercase;
     font-family: 'Futura PT';
-    font-size: 1.5em;
+    font-size: 20px;
     color: $blue;
     margin-bottom: 0.5em;
+    line-height: 1;
   }
   &__teaserTxt {
     color: $blue;
     font-family: "Merriweather";
-    font-size: 0.669em;
+    font-size: 12px;
     margin-bottom: 2.5em;
   }
 }

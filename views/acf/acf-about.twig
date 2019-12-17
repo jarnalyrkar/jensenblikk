@@ -3,5 +3,7 @@
       {% include 'acf/acf-textblock.twig' %}
     {% elseif flex_row.acf_fc_layout == 'full_img' %}
       {% include 'acf/acf-image.twig' %}
+    {% elseif flex_row.acf_fc_layout == 'sertifiseringer' %}
+      {% include 'acf/acf-certificates.twig' %}
     {% endif %}
   {% endfor %}

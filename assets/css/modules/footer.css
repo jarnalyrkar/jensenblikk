@@ -10,9 +10,6 @@
 .footerLogo {
   display: flex;
   &__img {
-    &--mobile {
-      filter: brightness(0) invert();
-    }
     &--desktop {
       display: none;
     }

@@ -1,0 +1,22 @@
+.certificatesModule {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  & p {
+    text-align: center;
+    color: $blue;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    text-decoration: underline;
+  }
+}
+
+.certificate {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate img {
+  align-self: center;
+}

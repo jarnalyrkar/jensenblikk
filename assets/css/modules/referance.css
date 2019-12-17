@@ -2,24 +2,25 @@
   &__container {
     padding: 0 2em;
     max-width: 1300px;
-    margin: 6em auto 4em;
+    margin-top: 2em;
   }
   &__title {
-    margin-bottom: 4em;
     text-align: center;
     text-transform: uppercase;
     color: $blue;
     font-family: "Futura PT";
-    font-size: 1.250em;
+    font-size: 14px;
+    font-weight: 400;
   }
   &__content {
     margin-bottom: 3em;
     text-align: center;
     color: $blue;
     & h2 {
-      font-size: 2em;
+      font-size: 21px;
       font-family: "Futura PT";
       margin-bottom: 1em;
+      font-weight: 400;
     }
     & p {
       margin-bottom: 2em;
@@ -45,11 +46,23 @@
 
 @media (min-width: 992px) {
   .singlePost {
+    &__container {
+      margin: 6em auto 4em;
+    }
     &__btnContainer {
       flex-direction: row;
     }
     &__btns {
       flex-direction: row;
+    }
+    &__title {
+      font-size: 1.250em;
+      margin-bottom: 4em;
+    }
+    &__content {
+      & h2 {
+        font-size: 2em;
+      }
     }
   }
 }

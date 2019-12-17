@@ -3,8 +3,11 @@
   text-align: center;
   background-color: white;
   color: $blue;
+  font-size: 1em;
   font-family: "Futura PT";
-  font-size: 2em;
+  &__inner {
+    display: inline-block;
+  }
   &--blue {
     background-color: $blue;
     color: white;
@@ -15,9 +18,12 @@
 
 }
 
+
+
 @media (min-width: 992px) {
   .aboutBlock {
     padding: 2em 5em;
+    font-size: 2em;
     &__inner {
       max-width: 992px;
       margin: auto;
