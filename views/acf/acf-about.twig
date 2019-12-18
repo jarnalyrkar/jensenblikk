@@ -5,5 +5,7 @@
       {% include 'acf/acf-image.twig' %}
     {% elseif flex_row.acf_fc_layout == 'sertifiseringer' %}
       {% include 'acf/acf-certificates.twig' %}
+    {% elseif flex_row.acf_fc_layout == 'textblock_two' %}
+      {% include 'acf/acf-textblock_two.twig' %}
     {% endif %}
   {% endfor %}

@@ -8,6 +8,11 @@
   &__inner {
     display: inline-block;
   }
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
   &--blue {
     background-color: $blue;
     color: white;

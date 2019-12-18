@@ -1,0 +1,27 @@
+{% if flex_row.bg_color == 'white' %}
+<div class="aboutBlock">
+  {% elseif flex_row.bg_color == 'blue' %}
+  <div class="aboutBlock aboutBlock--blue">
+    {% elseif flex_row.bg_color == 'img' %}
+    <div class="aboutBlock" style="background-image: url('{{ flex_row.bg_img }}')">
+      {% endif %}
+      <h3 class="aboutBlock__title">{{ flex_row.title }}</h3>
+      <div class="aboutBlock__flex">
+        <article>{{ flex_row.wysiwyg_left }}</article>
+        <article>{{ flex_row.wysiwyg_right }}</article>
+      </div>
+    </div>
+
+
+{# Våre Tjenester:
+
+Fasade- og taktekking
+Restaurering
+Sinktekking
+Kobbertekking
+Ventilasjonsmontering
+Varmepumpemontering
+Sveising av asfaltbelegg
+Sveising av membraner
+Sveising av PVC-folie
+Autorisert radonsikring #}
