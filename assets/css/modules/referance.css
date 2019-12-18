@@ -8,7 +8,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $blue;
-    font-family: "Futura PT";
+    font-family: "futura-pt";
     font-size: 14px;
     font-weight: 400;
   }
@@ -18,7 +18,7 @@
     color: $blue;
     & h2 {
       font-size: 21px;
-      font-family: "Futura PT";
+      font-family: "futura-pt";
       margin-bottom: 1em;
       font-weight: 400;
     }

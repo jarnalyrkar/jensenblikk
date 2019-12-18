@@ -4,7 +4,7 @@
   background-color: white;
   color: $blue;
   font-size: 1em;
-  font-family: "Futura PT";
+  font-family: "futura-pt";
   &__inner {
     display: inline-block;
   }
