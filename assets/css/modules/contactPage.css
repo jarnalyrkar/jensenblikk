@@ -26,10 +26,11 @@
   border: 1px solid white;
   text-transform: uppercase;
   color: white;
-  font-family: "futura-pt-bold";
-  font-size: 10.7px;
+  font-family: "futura-pt";
+  font-size: 12px;
   padding: 1em 5em;
   width: auto;
+  letter-spacing: 2px;
 }
 
 .submit {
@@ -64,12 +65,6 @@
   .wpcf7-submit {
     background-color: $blue;
     border: 1px solid $blue;
-    text-transform: uppercase;
-    color: white;
-    font-family: "futura-pt Bold";
-    font-size: 10.7px;
-    padding: 1em 5em;
-    width: auto;
   }
 
 
