@@ -7,6 +7,9 @@
   font-family: "futura-pt";
   &__inner {
     display: inline-block;
+    & img {
+      height: 100%;
+    }
   }
   &__flex {
     display: flex;
